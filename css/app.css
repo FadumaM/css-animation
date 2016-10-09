@@ -1,0 +1,126 @@
+body{
+  background-color: #e3d6e3;
+  height: 100vh;
+}
+.container{
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.spinner {
+  border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 0.25rem solid #726e93;
+    border-top-color: #2d3978;
+    -webkit-animation: spin 1s infinite linear;
+            animation: spin 1s infinite linear;
+    margin-bottom: 100px;
+}
+
+.steven{
+  margin-top: 100px;
+}
+
+.steven img{
+  width: 100px;
+  height: 100px;
+  animation: jump 1.5s ease 0s infinite normal ;
+}
+.loader:before,
+.loader:after,
+.loader {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #fcfffa;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+
+@keyframes jump {
+ 0%{
+	transform: translateY(0);
+ }
+ 20%{
+	transform: translateY(0);
+ }
+ 40%{
+	transform: translateY(-30px);
+ }
+ 50%{
+	transform: translateY(0);
+ }
+ 60%{
+	transform: translateY(-15px);
+ }
+ 80%{
+	transform: translateY(0);
+ }
+ 100%{
+	transform: translateY(0);
+ }
+}
